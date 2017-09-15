@@ -17,7 +17,7 @@ pod "CZCMobileAdsSDK",'~> 1.0'
 2.Drag the CZCMobileAdsSDK.framework into your project
 3.Add system frameworks
 ```ruby
-* CoreLocation.framework
+* 'CoreLocation.framework'
 * Foundation.framework
 * AVFoundation.framework
 * UIKit.framework
