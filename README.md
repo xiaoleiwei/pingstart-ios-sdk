@@ -1,11 +1,9 @@
 # Solo Mobile Ads SDK for iOS
-
 ## Prerequisites
    * Use Xcode 7.0 or higher
    * Target iOS 8.0 or higher
 
 ## Import the Mobile Ads SDK
-
 ### CocoaPods (preferred)
 The simplest way to import the SDK into an iOS project is with CocoaPods. Open your project's Podfile and add this line to your app's target:
 ```ruby
@@ -36,7 +34,6 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
   * AdSupport.framework
   
 4.Go to Targer->Build Settings->Search for "other linker flags", add "-ObjC" in other linker flags
-
 ## Example
 ### Request rewarded video
 ```Objective-C
