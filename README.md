@@ -17,11 +17,11 @@ pod install --repo-update
 If you're new to CocoaPods, see their [official documentation](https://guides.cocoapods.org/using/using-cocoapods.html) for info on how to create and use Podfiles.
 
 ### Manual download
-1.Download and Unzip
+1.Download and Unzip.
 
-2.Drag the CZCMobileAdsSDK.framework into your project
+2.Drag the CZCMobileAdsSDK.framework into your project.
 
-3.Add system frameworks
+3.Add system frameworks.
   * CoreLocation.framework
   * Foundation.framework
   * AVFoundation.framework
@@ -34,7 +34,7 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
   * CoreTelephony.framework
   * AdSupport.framework
   
-4.Go to Targer->Build Settings->Search for "other linker flags", add "-ObjC" in other linker flags
+4.Go to Targer->Build Settings->Search for "other linker flags", add "-ObjC" in other linker flags.
 ## Example
 ### Request rewarded video
 ```Objective-C
