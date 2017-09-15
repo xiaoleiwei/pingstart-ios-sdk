@@ -1,6 +1,8 @@
 # Solo Mobile Ads SDK for iOS
 
-## Integration by CocoaPods
+## 1.Integration SDK
+
+### Integration by CocoaPods
 
 CZCMobileAdsSDK is available through CocoaPods. To install it, simply add the following line to your Podfile.
 
@@ -11,7 +13,7 @@ pod "CZCMobileAdsSDK"
 # The specified version
 pod "CZCMobileAdsSDK",'~> 1.0'
 ```
-## Integration by downloading SDK
+### Integration by downloading SDK
 
 1.Download and Unzip
 
