@@ -88,3 +88,9 @@ Here is an example that logs each event available in GADRewardBasedVideoAdDelega
 - (void)rewardVideoAdWillLeaveApplication:(CZCRewardVideoAd *)rewardVideoAd {
 }
 ```
+### Display rewarded video
+```Objective-C
+if ([[CZCRewardVideoAd sharedInstance] isReady]) {
+    [[CZCRewardVideoAd sharedInstance] presentFromRootViewController:self];
+}
+```
