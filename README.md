@@ -18,7 +18,6 @@ pod install --repo-update
 If you're new to CocoaPods, see their [official documentation](https://guides.cocoapods.org/using/using-cocoapods.html) for info on how to create and use Podfiles.
 
 ### Manual download
-
 1.Download and Unzip
 
 2.Drag the CZCMobileAdsSDK.framework into your project
@@ -39,6 +38,7 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
 4.Go to Targer->Build Settings->Search for "other linker flags", add "-ObjC" in other linker flags
 
 ## Example
+### Request rewarded video
 ```Objective-C
 #import <CZCMobileAdsSDK/CZCRewardVideoAd.h>
 
@@ -55,4 +55,36 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
 }
 
 @end
+```
+### Set up event notifications
+```Objective-C
+[GADRewardBasedVideoAd sharedInstance].delegate = self;
+```
+Here is an example that logs each event available in GADRewardBasedVideoAdDelegate::
+```Objective-C
+// Tells the delegate that the reward video ad has rewarded the user.
+- (void)rewardVideoAd:(CZCRewardVideoAd *)rewardVideoAd
+       rewardCurrency:(NSString *)rewardCurrency
+         rewardAmount:(int)rewardAmount {
+}
+
+// Tells the delegate that the reward video ad was received.
+- (void)rewardVideoAdDidReceiveAd:(CZCRewardVideoAd *)rewardVideoAd {
+}
+
+// Tells the delegate that the reward video ad failed to load.
+- (void)rewardVideoAd:(CZCRewardVideoAd *)rewardVideoAd didFailToLoadWithError:(NSError *)error {
+}
+
+// Tells the delegate that the reward video ad started playing.
+- (void)rewardVideoAdDidStartPlaying:(CZCRewardVideoAd *)rewardVideoAd {
+}
+
+// Tells the delegate that the reward video ad closed.
+- (void)rewardVideoAdDidClose:(CZCRewardVideoAd *)rewardVideoAd {
+}
+
+// Tells the delegate that the reward video ad will leave tha application.
+- (void)rewardVideoAdWillLeaveApplication:(CZCRewardVideoAd *)rewardVideoAd {
+}
 ```
