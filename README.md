@@ -11,7 +11,7 @@ pod "CZCMobileAdsSDK"
 # The specified version
 pod "CZCMobileAdsSDK",'~> 1.0'
 ```
-## Manually, using the SDK download
+## Integration by downloading SDK
 
 1.Download and Unzip
 
