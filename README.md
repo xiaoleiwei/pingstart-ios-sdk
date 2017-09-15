@@ -39,7 +39,7 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
 4.Go to Targer->Build Settings->Search for "other linker flags", add "-ObjC" in other linker flags
 
 ## Example
-```objective-c
+```Objective-C
 #import <CZCMobileAdsSDK/CZCRewardVideoAd.h>
 
 @implementation AppDelegate
