@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+            <title></title>
+            <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0,
+            maximum-scale=1.0,
+            minimum-scale=1.0"/>
+            <style>
+                html{
+                    width: 100%;
+                    height: 100%;
+                }
+            body{
+                width: 100%;
+                height: 100%;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .content{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                overflow: hidden;
+            }
+            .content> img{
+                height: 100%;
+                width: 100%;
+                display: table;
+            }
+            
+            /*毛玻璃遮罩层*/
+            /*.filter{
+             position: absolute;
+             bottom: 0;
+             width: 100%;
+             height: 26%;
+             background-color: #736962;
+             filter: blur(40px);
+             z-index: 10;
+             }*/
+            .footer-modal{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 5rem;
+                background-color: #000;
+                opacity: 0.5;
+                /*z-index: 50;*/
+            }
+            .footer{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 5rem;
+                padding:0.5rem;
+                font-weight: bold;
+                color:#fff ;
+                font-size: 1rem;
+                box-sizing: border-box;
+                vertical-align: middle;
+                
+            }
+            .box{
+                width:100%;
+                height: 4rem;
+                vertical-align: middle;
+            }
+            /*脚部小图片以及文字和小星星*/
+            .dt{
+                display: block;
+                float: left;
+                width:4rem;
+                height:4rem;
+                background: url("{icon_url}") no-repeat;
+                background-size: cover;
+                border-radius: 5px;
+                margin-left:2.5%;
+            }
+            
+            .dt>img{
+                width: 100%;
+            }
+            p{
+                font-family: "Helvetica Neue";
+                float: left;
+                width:45%;
+                height:2rem;
+                line-height:2rem;
+                vertical-align: middle;
+                margin-left: 1.5rem;
+            }
+            .d1{
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                text-shadow: 0px 0px 2px red;
+                font-size: 1.1rem;;
+            }
+            .d2{
+                height: 1rem;
+            }
+            .d2>img{
+                height: 100%;
+                margin-top:0.8rem;
+            }
+            /*下载按钮*/
+            .downLoad{
+                font-size: 1.1rem;
+                float: right;
+                width: 8rem;
+                height: 2.8rem;
+                text-decoration: none;
+                background: #0080FC;
+                text-align: center;
+                line-height:2.6rem;
+                border-radius: 0.5rem;
+                color: #ffffff;
+                position: absolute;
+                bottom:22%;
+                right:3.6%;
+                font-family: "Helvetica Neue";
+            }
+            /*关闭按钮*/
+            .close{
+                position: absolute;
+                top: 5%;
+                right: 3%;
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: #000;
+                opacity: 0.5;
+                border-radius: 50%;
+                padding: 0.2rem;
+            }
+            .close b{
+                position: absolute;
+                top:0.9rem;
+                left: 0.4rem;
+                display: block;
+                width: 1rem;
+                height: 1px;
+                border: 1px solid #fff;
+                transform:rotate(45deg);
+                background-color: #fff;
+                /*box-shadow: 0px 0px 2px 2px red;*/
+            }
+            .close b:nth-child(1){
+                transform:rotate(-45deg);
+            }
+            @keyframes pound{
+                to{transform: scale(1.1);}
+            }
+            .heart{
+                animation: pound .8s infinite alternate;
+            }
+            
+            
+                </style>
+    </head>
+    <body>
+        <div class="content">
+            <img src="{image_url}" alt=""/>
+            <!--关闭按钮-->
+            <a class="close" href="nbt://close">
+                <b></b>
+                <b></b>
+            </a>
+            <!--遮罩层-->
+            <!--<div class="filter"></div>-->
+            <div class="footer-modal">
+                
+            </div>
+            <div class="footer">
+                <div class="box">
+                    <div class="dt"><!-- <img src="52214.png" alt=""/> --></div>
+                    <p class="d1">{app_name}</p>
+                    <p class="d2"><img src="http://om2r0947g.bkt.clouddn.com/star.png"/></p>
+                    <a class="downLoad heart" href="nbt://click">Download</a>
+                </div>
+                <!--下载按钮-->
+                
+            </div>
+        </div>
+    </body>
+</html>

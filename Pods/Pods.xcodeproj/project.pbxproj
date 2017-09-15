@@ -17,10 +17,12 @@
 		2352A85FE707A2682638C3AC5AA96377 /* Pods-CZCMobileAdsSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CZCMobileAdsSample.modulemap"; sourceTree = "<group>"; };
 		52BBA1FD30E84E0846F4E1C0B58A3E20 /* Pods-CZCMobileAdsSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CZCMobileAdsSample-frameworks.sh"; sourceTree = "<group>"; };
 		531C71773C83E4A7E280A5541919A770 /* Pods-CZCMobileAdsSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CZCMobileAdsSample-dummy.m"; sourceTree = "<group>"; };
+		59E515E1225FCCAEAA14BBE71A8FD8D1 /* CZCMobileAdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CZCMobileAdsSDK.framework; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		71252A582952D0B9801E68D196877A54 /* Pods-CZCMobileAdsSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CZCMobileAdsSample-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95DD12E5AE8112A489036B2FE6D757B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18318787100E35F7F7C2F0BC517639A /* CZCMobileAdsSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CZCMobileAdsSDK.bundle; path = CZCMobileAdsSDK.framework/Versions/A/Resources/CZCMobileAdsSDK.bundle; sourceTree = "<group>"; };
 		B5D79B70ADB07D5569A4E18B22746F8C /* Pods_CZCMobileAdsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CZCMobileAdsSample.framework; path = "Pods-CZCMobileAdsSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DDFAC2F7FC0CB32B8FAF56F690A0E7 /* Pods-CZCMobileAdsSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CZCMobileAdsSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		C1D8C81AE472DDFC72D1453EF4865BA3 /* Pods-CZCMobileAdsSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CZCMobileAdsSample-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A5CC28D7F2C1FB06335405E4ADF3E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59E515E1225FCCAEAA14BBE71A8FD8D1 /* CZCMobileAdsSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		57AA7FFE543DAF95040C60A4A6F93625 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +63,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7ECEBCE3824C7760D5698DBE039F83C1 /* Pods */,
 				7E097899E686C64B9350C75E6C33D78B /* Products */,
 				57AA7FFE543DAF95040C60A4A6F93625 /* Targets Support Files */,
 			);
@@ -64,6 +75,24 @@
 				B5D79B70ADB07D5569A4E18B22746F8C /* Pods_CZCMobileAdsSample.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7ECEBCE3824C7760D5698DBE039F83C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9977B5FC30DC79FF310B8324E42F8A2F /* CZCMobileAdsSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9977B5FC30DC79FF310B8324E42F8A2F /* CZCMobileAdsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				05A5CC28D7F2C1FB06335405E4ADF3E3 /* Frameworks */,
+				C93738FC28730FAA2C2E733BAC3B97AF /* Resources */,
+			);
+			name = CZCMobileAdsSDK;
+			path = CZCMobileAdsSDK;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -90,6 +119,14 @@
 			);
 			name = "Pods-CZCMobileAdsSample";
 			path = "Target Support Files/Pods-CZCMobileAdsSample";
+			sourceTree = "<group>";
+		};
+		C93738FC28730FAA2C2E733BAC3B97AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B18318787100E35F7F7C2F0BC517639A /* CZCMobileAdsSDK.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
