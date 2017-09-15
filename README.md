@@ -1,4 +1,4 @@
-# Solo Mobile Ads SDK for iOS
+# Solo Mobile Ads reward video SDK for iOS
 Rewarded video ads are full-screen video ads that users have the option of watching in full in exchange for in-app rewards.
 ## Prerequisites
    * Use Xcode 7.0 or higher
