@@ -57,7 +57,7 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
 ```Objective-C
 [GADRewardBasedVideoAd sharedInstance].delegate = self;
 ```
-Here is an example that logs each event available in GADRewardBasedVideoAdDelegate::
+Here is an example that logs each event available in CZCRewardVideoAdDelegate:
 ```Objective-C
 // Tells the delegate that the reward video ad has rewarded the user.
 - (void)rewardVideoAd:(CZCRewardVideoAd *)rewardVideoAd
