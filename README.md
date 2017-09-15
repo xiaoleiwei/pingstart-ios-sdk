@@ -1,19 +1,23 @@
 # Solo Mobile Ads SDK for iOS
 
-## Integration SDK
+## Prerequisites
+   * Use Xcode 7.0 or higher
+   * Target iOS 8.0 or higher
 
-### Integration by CocoaPods
+## Import the Mobile Ads SDK
 
-CZCMobileAdsSDK is available through CocoaPods. To install it, simply add the following line to your Podfile.
-
+### CocoaPods (preferred)
+The simplest way to import the SDK into an iOS project is with CocoaPods. Open your project's Podfile and add this line to your app's target:
 ```ruby
-# Default download lastest sdk
 pod "CZCMobileAdsSDK" 
-
-# The specified version
-pod "CZCMobileAdsSDK",'~> 1.0'
 ```
-### Integration by downloading SDK
+Then from the command line run:
+```ruby
+pod install --repo-update
+```
+If you're new to CocoaPods, see their [official documentation](https://guides.cocoapods.org/using/using-cocoapods.html) for info on how to create and use Podfiles.
+
+### Manual download
 
 1.Download and Unzip
 
@@ -34,4 +38,4 @@ pod "CZCMobileAdsSDK",'~> 1.0'
   
 4.Go to Targer->Build Settings->Search for "other linker flags", add "-ObjC" in other linker flags
 
-## Access code
+## Example
