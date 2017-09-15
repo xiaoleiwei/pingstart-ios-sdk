@@ -1,6 +1,6 @@
 # Solo Mobile Ads SDK for iOS
 
-## 1.Integration SDK
+## Integration SDK
 
 ### Integration by CocoaPods
 
@@ -34,4 +34,4 @@ pod "CZCMobileAdsSDK",'~> 1.0'
   
 4.Go to Targer->Build Settings->Search for "other linker flags", add "-ObjC" in other linker flags
 
-## 2.Access code
+## Access code
