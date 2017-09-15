@@ -33,3 +33,5 @@ pod "CZCMobileAdsSDK",'~> 1.0'
   * AdSupport.framework
   
 4.Go to Targer->Build Settings->Search for "other linker flags", add "-ObjC" in other linker flags
+
+## 2.Access code
