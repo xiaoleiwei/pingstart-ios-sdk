@@ -40,6 +40,6 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
 
 ## Example
 ```objective-c
-    CZCRewardVideoAd *videoAd = [CZCRewardVideoAd sharedInstance];
-    [videoAd loadWithAppID:self.appID slotID:self.slotID delegate:self];
+CZCRewardVideoAd *videoAd = [CZCRewardVideoAd sharedInstance];
+[videoAd loadWithAppID:self.appID slotID:self.slotID delegate:self];
 ```
