@@ -14,7 +14,9 @@ pod "CZCMobileAdsSDK",'~> 1.0'
 ## Manually, using the SDK download
 
 1.Download and Unzip
+
 2.Drag the CZCMobileAdsSDK.framework into your project
+
 3.Add system frameworks
   * CoreLocation.framework
   * Foundation.framework
@@ -27,4 +29,5 @@ pod "CZCMobileAdsSDK",'~> 1.0'
   * CoreMedia.framework
   * CoreTelephony.framework
   * AdSupport.framework
+  
 4.Go to Targer->Build Settings->Search for "other linker flags", add "-ObjC" in other linker flags
