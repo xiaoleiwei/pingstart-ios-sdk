@@ -42,6 +42,10 @@ platform :ios do
   # You can define as many lanes as you want
 
   after_all do |lane|
+    sh "rm -rf ~/Documents/CZC/pingstart-ios-sdk/CZCMobileAdsSample.app.dSYM.zip"
+    sh "rm -rf ~/Documents/CZC/pingstart-ios-sdk/CZCMobileAdsSample.ipa"
+  	# rm -rf CZCMobileAdsSample.app.dSYM.zip
+  	# rm -rf CZCMobileAdsSample.ipa
     # This block is called, only if the executed lane was successful
 
     # slack(
