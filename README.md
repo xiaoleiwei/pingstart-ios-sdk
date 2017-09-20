@@ -47,7 +47,7 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
     
   // Initialize Solo Mobile Ads SDK
   // Sample Solo appID: 5176_1 slotID:4
-  [[CZCRewardVideoAd sharedInstance] loadWithAppID:self.appID slotID:self.slotID delegate:self];
+  [[CZCRewardVideoAd sharedInstance] loadWithAppID:self.appID slotID:self.slotID];
   
   return YES;
 }
