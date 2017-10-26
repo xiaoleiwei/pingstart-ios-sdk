@@ -7,7 +7,6 @@
 //
 
 #import "CZCVideoViewController.h"
-#import <CZCMobileAdsSDK/CZCLogger.h>
 #import "CZCVideoDetailViewController.h"
 
 @interface CZCVideoViewController () <UITextFieldDelegate>
@@ -22,8 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [[CZCLogger stdLogger] setLevel:kLogLevelDebug];
 
     self.navigationItem.title = @"Video";
 }

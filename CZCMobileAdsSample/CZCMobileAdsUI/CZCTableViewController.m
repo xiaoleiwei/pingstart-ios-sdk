@@ -7,6 +7,7 @@
 //
 
 #import "CZCTableViewController.h"
+#import <CZCMobileAdsSDK/CZCLogger.h>
 
 @interface CZCTableViewController ()
 
@@ -28,27 +29,8 @@
         @"CZCVideoViewController",
     ];
 
-    //[self implementTestFeature];
+    [[CZCLogger stdLogger] setLevel:kLogLevelDebug];
 }
-
-//- (void)implementTestFeature {
-//    UIAlertController *alert = [UIAlertController
-//    alertControllerWithTitle:@"选择测试环境"
-//                                                                   message:nil
-//                                                            preferredStyle:UIAlertControllerStyleAlert];
-//    [alert addAction:[UIAlertAction actionWithTitle:@"取消"
-//                                              style:UIAlertActionStyleDefault
-//                                            handler:^(UIAlertAction *_Nonnull
-//                                            action){
-//                                            }]];
-//    [alert addAction:[UIAlertAction actionWithTitle:@"确定"
-//                                              style:UIAlertActionStyleDefault
-//                                            handler:^(UIAlertAction *_Nonnull
-//                                            action) {
-//                                                [CZCTest enableTestMode];
-//                                            }]];
-//    [self presentViewController:alert animated:YES completion:nil];
-//}
 
 #pragma mark - Table view data source
 

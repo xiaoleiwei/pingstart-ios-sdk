@@ -2,7 +2,7 @@
 //  CZCVideoDetailViewController.h
 //  CZCMobileAds
 //
-//  Created by 魏晓磊 on 2017/9/14.
+//  Created by ht on 2017/9/14.
 //  Copyright © 2017年 xiaoleiwei. All rights reserved.
 //
 

@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		05671BB455929AB5562BB311 /* Pods_CZCMobileAdsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93349DBBD07DCC0710B3AC9E /* Pods_CZCMobileAdsSample.framework */; };
-		630A0DC81F418A0600A7B9D4 /* CZCBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A0DBC1F418A0600A7B9D4 /* CZCBannerViewController.m */; };
-		630A0DC91F418A0600A7B9D4 /* CZCInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A0DBD1F418A0600A7B9D4 /* CZCInterstitialViewController.m */; };
-		630A0DCA1F418A0600A7B9D4 /* CZCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A0DBE1F418A0600A7B9D4 /* CZCTableViewController.m */; };
-		630A0DCB1F418A0600A7B9D4 /* CZCVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A0DBF1F418A0600A7B9D4 /* CZCVideoViewController.m */; };
-		630A0DCC1F418A0600A7B9D4 /* CZCVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630A0DC01F418A0600A7B9D4 /* CZCVideoViewController.xib */; };
-		630A0DCD1F418A0600A7B9D4 /* CZCInterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630A0DC51F418A0600A7B9D4 /* CZCInterstitialViewController.xib */; };
-		630A0DCE1F418A0600A7B9D4 /* CZCBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630A0DC61F418A0600A7B9D4 /* CZCBannerViewController.xib */; };
-		630A0DCF1F418A0600A7B9D4 /* CZCTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630A0DC71F418A0600A7B9D4 /* CZCTableViewController.xib */; };
-		6312E04A1F6A30CC00F1AE1E /* CZCVideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6312E0481F6A30CC00F1AE1E /* CZCVideoDetailViewController.m */; };
-		6312E04B1F6A30CC00F1AE1E /* CZCVideoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6312E0491F6A30CC00F1AE1E /* CZCVideoDetailViewController.xib */; };
+		63C3162F1FA09C20001CAC3D /* CZCBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C316211FA09C20001CAC3D /* CZCBannerViewController.m */; };
+		63C316301FA09C20001CAC3D /* CZCBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C316221FA09C20001CAC3D /* CZCBannerViewController.xib */; };
+		63C316311FA09C20001CAC3D /* CZCInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C316241FA09C20001CAC3D /* CZCInterstitialViewController.m */; };
+		63C316321FA09C20001CAC3D /* CZCInterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C316251FA09C20001CAC3D /* CZCInterstitialViewController.xib */; };
+		63C316331FA09C20001CAC3D /* CZCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C316271FA09C20001CAC3D /* CZCTableViewController.m */; };
+		63C316341FA09C20001CAC3D /* CZCTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C316281FA09C20001CAC3D /* CZCTableViewController.xib */; };
+		63C316351FA09C20001CAC3D /* CZCVideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C3162A1FA09C20001CAC3D /* CZCVideoDetailViewController.m */; };
+		63C316361FA09C20001CAC3D /* CZCVideoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C3162B1FA09C20001CAC3D /* CZCVideoDetailViewController.xib */; };
+		63C316371FA09C20001CAC3D /* CZCVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C3162D1FA09C20001CAC3D /* CZCVideoViewController.m */; };
+		63C316381FA09C20001CAC3D /* CZCVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C3162E1FA09C20001CAC3D /* CZCVideoViewController.xib */; };
 		63CE97D71F3AB55F00E5DDDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE97D61F3AB55F00E5DDDE /* main.m */; };
 		63CE97DA1F3AB55F00E5DDDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE97D91F3AB55F00E5DDDE /* AppDelegate.m */; };
 		63CE97E01F3AB55F00E5DDDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CE97DE1F3AB55F00E5DDDE /* Main.storyboard */; };
@@ -27,21 +27,21 @@
 
 /* Begin PBXFileReference section */
 		26BD117E7D9CDF638EACC2D5 /* Pods-CZCMobileAdsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZCMobileAdsSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CZCMobileAdsSample/Pods-CZCMobileAdsSample.release.xcconfig"; sourceTree = "<group>"; };
-		630A0DBC1F418A0600A7B9D4 /* CZCBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCBannerViewController.m; sourceTree = "<group>"; };
-		630A0DBD1F418A0600A7B9D4 /* CZCInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCInterstitialViewController.m; sourceTree = "<group>"; };
-		630A0DBE1F418A0600A7B9D4 /* CZCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCTableViewController.m; sourceTree = "<group>"; };
-		630A0DBF1F418A0600A7B9D4 /* CZCVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCVideoViewController.m; sourceTree = "<group>"; };
-		630A0DC01F418A0600A7B9D4 /* CZCVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCVideoViewController.xib; sourceTree = "<group>"; };
-		630A0DC11F418A0600A7B9D4 /* CZCBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCBannerViewController.h; sourceTree = "<group>"; };
-		630A0DC21F418A0600A7B9D4 /* CZCVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCVideoViewController.h; sourceTree = "<group>"; };
-		630A0DC31F418A0600A7B9D4 /* CZCInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCInterstitialViewController.h; sourceTree = "<group>"; };
-		630A0DC41F418A0600A7B9D4 /* CZCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCTableViewController.h; sourceTree = "<group>"; };
-		630A0DC51F418A0600A7B9D4 /* CZCInterstitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCInterstitialViewController.xib; sourceTree = "<group>"; };
-		630A0DC61F418A0600A7B9D4 /* CZCBannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCBannerViewController.xib; sourceTree = "<group>"; };
-		630A0DC71F418A0600A7B9D4 /* CZCTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCTableViewController.xib; sourceTree = "<group>"; };
-		6312E0471F6A30CC00F1AE1E /* CZCVideoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCVideoDetailViewController.h; sourceTree = "<group>"; };
-		6312E0481F6A30CC00F1AE1E /* CZCVideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCVideoDetailViewController.m; sourceTree = "<group>"; };
-		6312E0491F6A30CC00F1AE1E /* CZCVideoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCVideoDetailViewController.xib; sourceTree = "<group>"; };
+		63C316201FA09C20001CAC3D /* CZCBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCBannerViewController.h; sourceTree = "<group>"; };
+		63C316211FA09C20001CAC3D /* CZCBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCBannerViewController.m; sourceTree = "<group>"; };
+		63C316221FA09C20001CAC3D /* CZCBannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCBannerViewController.xib; sourceTree = "<group>"; };
+		63C316231FA09C20001CAC3D /* CZCInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCInterstitialViewController.h; sourceTree = "<group>"; };
+		63C316241FA09C20001CAC3D /* CZCInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCInterstitialViewController.m; sourceTree = "<group>"; };
+		63C316251FA09C20001CAC3D /* CZCInterstitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCInterstitialViewController.xib; sourceTree = "<group>"; };
+		63C316261FA09C20001CAC3D /* CZCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCTableViewController.h; sourceTree = "<group>"; };
+		63C316271FA09C20001CAC3D /* CZCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCTableViewController.m; sourceTree = "<group>"; };
+		63C316281FA09C20001CAC3D /* CZCTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCTableViewController.xib; sourceTree = "<group>"; };
+		63C316291FA09C20001CAC3D /* CZCVideoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCVideoDetailViewController.h; sourceTree = "<group>"; };
+		63C3162A1FA09C20001CAC3D /* CZCVideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCVideoDetailViewController.m; sourceTree = "<group>"; };
+		63C3162B1FA09C20001CAC3D /* CZCVideoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCVideoDetailViewController.xib; sourceTree = "<group>"; };
+		63C3162C1FA09C20001CAC3D /* CZCVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCVideoViewController.h; sourceTree = "<group>"; };
+		63C3162D1FA09C20001CAC3D /* CZCVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCVideoViewController.m; sourceTree = "<group>"; };
+		63C3162E1FA09C20001CAC3D /* CZCVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCVideoViewController.xib; sourceTree = "<group>"; };
 		63CE97D21F3AB55F00E5DDDE /* CZCMobileAdsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZCMobileAdsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CE97D61F3AB55F00E5DDDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63CE97D81F3AB55F00E5DDDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +66,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63C3161F1FA09C20001CAC3D /* CZCMobileAdsUI */ = {
+			isa = PBXGroup;
+			children = (
+				63C316201FA09C20001CAC3D /* CZCBannerViewController.h */,
+				63C316211FA09C20001CAC3D /* CZCBannerViewController.m */,
+				63C316221FA09C20001CAC3D /* CZCBannerViewController.xib */,
+				63C316231FA09C20001CAC3D /* CZCInterstitialViewController.h */,
+				63C316241FA09C20001CAC3D /* CZCInterstitialViewController.m */,
+				63C316251FA09C20001CAC3D /* CZCInterstitialViewController.xib */,
+				63C316261FA09C20001CAC3D /* CZCTableViewController.h */,
+				63C316271FA09C20001CAC3D /* CZCTableViewController.m */,
+				63C316281FA09C20001CAC3D /* CZCTableViewController.xib */,
+				63C316291FA09C20001CAC3D /* CZCVideoDetailViewController.h */,
+				63C3162A1FA09C20001CAC3D /* CZCVideoDetailViewController.m */,
+				63C3162B1FA09C20001CAC3D /* CZCVideoDetailViewController.xib */,
+				63C3162C1FA09C20001CAC3D /* CZCVideoViewController.h */,
+				63C3162D1FA09C20001CAC3D /* CZCVideoViewController.m */,
+				63C3162E1FA09C20001CAC3D /* CZCVideoViewController.xib */,
+			);
+			path = CZCMobileAdsUI;
+			sourceTree = "<group>";
+		};
 		63CE97C91F3AB55F00E5DDDE = {
 			isa = PBXGroup;
 			children = (
@@ -87,21 +109,7 @@
 		63CE97D41F3AB55F00E5DDDE /* CZCMobileAdsSample */ = {
 			isa = PBXGroup;
 			children = (
-				6312E0471F6A30CC00F1AE1E /* CZCVideoDetailViewController.h */,
-				6312E0481F6A30CC00F1AE1E /* CZCVideoDetailViewController.m */,
-				6312E0491F6A30CC00F1AE1E /* CZCVideoDetailViewController.xib */,
-				630A0DC11F418A0600A7B9D4 /* CZCBannerViewController.h */,
-				630A0DBC1F418A0600A7B9D4 /* CZCBannerViewController.m */,
-				630A0DC61F418A0600A7B9D4 /* CZCBannerViewController.xib */,
-				630A0DC31F418A0600A7B9D4 /* CZCInterstitialViewController.h */,
-				630A0DBD1F418A0600A7B9D4 /* CZCInterstitialViewController.m */,
-				630A0DC51F418A0600A7B9D4 /* CZCInterstitialViewController.xib */,
-				630A0DC41F418A0600A7B9D4 /* CZCTableViewController.h */,
-				630A0DBE1F418A0600A7B9D4 /* CZCTableViewController.m */,
-				630A0DC71F418A0600A7B9D4 /* CZCTableViewController.xib */,
-				630A0DC21F418A0600A7B9D4 /* CZCVideoViewController.h */,
-				630A0DBF1F418A0600A7B9D4 /* CZCVideoViewController.m */,
-				630A0DC01F418A0600A7B9D4 /* CZCVideoViewController.xib */,
+				63C3161F1FA09C20001CAC3D /* CZCMobileAdsUI */,
 				63CE97D81F3AB55F00E5DDDE /* AppDelegate.h */,
 				63CE97D91F3AB55F00E5DDDE /* AppDelegate.m */,
 				63CE97DE1F3AB55F00E5DDDE /* Main.storyboard */,
@@ -173,7 +181,7 @@
 					63CE97D11F3AB55F00E5DDDE = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = PSK76NZVZ4;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -201,11 +209,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				63CE97E51F3AB55F00E5DDDE /* LaunchScreen.storyboard in Resources */,
-				630A0DCE1F418A0600A7B9D4 /* CZCBannerViewController.xib in Resources */,
-				630A0DCD1F418A0600A7B9D4 /* CZCInterstitialViewController.xib in Resources */,
-				630A0DCF1F418A0600A7B9D4 /* CZCTableViewController.xib in Resources */,
-				6312E04B1F6A30CC00F1AE1E /* CZCVideoDetailViewController.xib in Resources */,
-				630A0DCC1F418A0600A7B9D4 /* CZCVideoViewController.xib in Resources */,
+				63C316381FA09C20001CAC3D /* CZCVideoViewController.xib in Resources */,
+				63C316361FA09C20001CAC3D /* CZCVideoDetailViewController.xib in Resources */,
+				63C316321FA09C20001CAC3D /* CZCInterstitialViewController.xib in Resources */,
+				63C316341FA09C20001CAC3D /* CZCTableViewController.xib in Resources */,
+				63C316301FA09C20001CAC3D /* CZCBannerViewController.xib in Resources */,
 				63CE97E21F3AB55F00E5DDDE /* Assets.xcassets in Resources */,
 				63CE97E01F3AB55F00E5DDDE /* Main.storyboard in Resources */,
 			);
@@ -275,12 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				630A0DCB1F418A0600A7B9D4 /* CZCVideoViewController.m in Sources */,
-				6312E04A1F6A30CC00F1AE1E /* CZCVideoDetailViewController.m in Sources */,
-				630A0DC91F418A0600A7B9D4 /* CZCInterstitialViewController.m in Sources */,
-				630A0DCA1F418A0600A7B9D4 /* CZCTableViewController.m in Sources */,
-				630A0DC81F418A0600A7B9D4 /* CZCBannerViewController.m in Sources */,
+				63C316371FA09C20001CAC3D /* CZCVideoViewController.m in Sources */,
 				63CE97DA1F3AB55F00E5DDDE /* AppDelegate.m in Sources */,
+				63C316331FA09C20001CAC3D /* CZCTableViewController.m in Sources */,
+				63C316351FA09C20001CAC3D /* CZCVideoDetailViewController.m in Sources */,
+				63C316311FA09C20001CAC3D /* CZCInterstitialViewController.m in Sources */,
+				63C3162F1FA09C20001CAC3D /* CZCBannerViewController.m in Sources */,
 				63CE97D71F3AB55F00E5DDDE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,15 +419,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: wenbo zhang (8R67AB3888)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wenbo zhang (8R67AB3888)";
-				DEVELOPMENT_TEAM = PSK76NZVZ4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CZCMobileAdsSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.czc.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c9e345fe-bee0-4cf3-99b0-f618b8506124";
-				PROVISIONING_PROFILE_SPECIFIER = ChinaLifeTestDevelopment;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -429,15 +438,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: wenbo zhang (8R67AB3888)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wenbo zhang (8R67AB3888)";
-				DEVELOPMENT_TEAM = PSK76NZVZ4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CZCMobileAdsSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.czc.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c9e345fe-bee0-4cf3-99b0-f618b8506124";
-				PROVISIONING_PROFILE_SPECIFIER = ChinaLifeTestDevelopment;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
