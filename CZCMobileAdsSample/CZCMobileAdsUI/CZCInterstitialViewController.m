@@ -50,28 +50,42 @@
 
 #pragma mark - CZCInterstitialDelegate
 - (void)interstitialDidReceivedAd:(CZCInterstitial *)ad {
-    self.readyLabel.textColor = [UIColor blackColor];
+    __weak typeof(self) weakSelf = self;
     
-    self.errorLabel.textColor = [UIColor lightGrayColor];
-    self.retryLabel.textColor = [UIColor lightGrayColor];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        weakSelf.readyLabel.textColor = [UIColor blackColor];
+        weakSelf.errorLabel.textColor = [UIColor lightGrayColor];
+        weakSelf.retryLabel.textColor = [UIColor lightGrayColor];
+    });
 }
 
 - (void)interstitial:(CZCInterstitial *)ad didFailToReceiveAdWithError:(NSError *)error {
-    self.errorLabel.text = error.localizedFailureReason;
-    self.errorLabel.textColor = [UIColor redColor];
+    __weak typeof(self) weakSelf = self;
     
-    self.retryLabel.textColor = [UIColor blackColor];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        weakSelf.errorLabel.text = error.localizedFailureReason;
+        weakSelf.errorLabel.textColor = [UIColor redColor];
+        weakSelf.retryLabel.textColor = [UIColor blackColor];
+    });
 }
 
 - (void)interstitialWillPresentScreen:(CZCInterstitial *)ad {
-    self.presentLabel.textColor = [UIColor blackColor];
+    __weak typeof(self) weakSelf = self;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        weakSelf.presentLabel.textColor = [UIColor blackColor];
+    });
 }
 
 - (void)interstitialDidClick:(CZCInterstitial *)ad {
 }
 
 - (void)interstitialWillDismissScreen:(CZCInterstitial *)ad {
-    [self reset];
+    __weak typeof(self) weakSelf = self;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakSelf reset];
+    });
 }
 
 - (void)reset {

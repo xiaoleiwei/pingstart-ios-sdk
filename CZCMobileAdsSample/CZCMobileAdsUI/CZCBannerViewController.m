@@ -52,23 +52,35 @@
 
 #pragma mark - CZCBannerViewDelegate
 - (void)adViewRequest:(CZCBannerView *)bannerView {
-    self.errorLabel.textColor = [UIColor lightGrayColor];
-    self.retryLabel.textColor = [UIColor lightGrayColor];
-    self.impressionLabel.textColor = [UIColor lightGrayColor];
+    __weak typeof(self) weakSelf = self;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        weakSelf.errorLabel.textColor = [UIColor lightGrayColor];
+        weakSelf.retryLabel.textColor = [UIColor lightGrayColor];
+        weakSelf.impressionLabel.textColor = [UIColor lightGrayColor];
+    });
 }
 
 - (void)adViewDidReceiveAd:(CZCBannerView *)bannerView {
-    [self.view addSubview:self.bannerView];
+    __weak typeof(self) weakSelf = self;
     
-    self.impressionLabel.textColor = [UIColor blackColor];
-    self.errorLabel.textColor = [UIColor lightGrayColor];
-    self.retryLabel.textColor = [UIColor lightGrayColor];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        weakSelf.impressionLabel.textColor = [UIColor blackColor];
+        weakSelf.errorLabel.textColor = [UIColor lightGrayColor];
+        weakSelf.retryLabel.textColor = [UIColor lightGrayColor];
+        
+        [weakSelf.view addSubview:self.bannerView];
+    });
 }
 
 - (void)adView:(CZCBannerView *)bannerView didFailToReceiveAdWithError:(NSError *)error {
-    self.errorLabel.text = error.localizedFailureReason;
-    self.errorLabel.textColor = [UIColor redColor];
-    self.retryLabel.textColor = [UIColor blackColor];
+    __weak typeof(self) weakSelf = self;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        weakSelf.errorLabel.text = error.localizedFailureReason;
+        weakSelf.errorLabel.textColor = [UIColor redColor];
+        weakSelf.retryLabel.textColor = [UIColor blackColor];
+    });
 }
 
 - (void)adViewDidClick:(CZCBannerView *)bannerView {
