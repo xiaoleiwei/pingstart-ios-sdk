@@ -21,7 +21,7 @@ platform :ios do
   #   scan
   # end
 
-  desc "Submit a new Beta Build to Testflight"
+  desc "Submit a new Beta Build to HockeyApp"
   lane :beta do
     # Build
     gym(

@@ -181,7 +181,7 @@
 					63CE97D11F3AB55F00E5DDDE = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = PSK76NZVZ4;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -341,7 +341,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wenbo zhang (8R67AB3888)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 8YA4UXA94B;
+				DEVELOPMENT_TEAM = PSK76NZVZ4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -393,7 +393,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wenbo zhang (8R67AB3888)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 8YA4UXA94B;
+				DEVELOPMENT_TEAM = PSK76NZVZ4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -419,16 +419,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: wenbo zhang (8R67AB3888)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wenbo zhang (8R67AB3888)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PSK76NZVZ4;
 				INFOPLIST_FILE = CZCMobileAdsSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.czc.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "c9e345fe-bee0-4cf3-99b0-f618b8506124";
+				PROVISIONING_PROFILE_SPECIFIER = ChinaLifeTestDevelopment;
 			};
 			name = Debug;
 		};
@@ -438,16 +438,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: wenbo zhang (8R67AB3888)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wenbo zhang (8R67AB3888)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PSK76NZVZ4;
 				INFOPLIST_FILE = CZCMobileAdsSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.czc.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "c9e345fe-bee0-4cf3-99b0-f618b8506124";
+				PROVISIONING_PROFILE_SPECIFIER = ChinaLifeTestDevelopment;
 			};
 			name = Release;
 		};

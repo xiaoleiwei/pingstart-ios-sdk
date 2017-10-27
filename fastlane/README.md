@@ -34,7 +34,7 @@ xcode-select --install
 ```
 fastlane ios beta
 ```
-Submit a new Beta Build to Testflight
+Submit a new Beta Build to HockeyApp
 
 ----
 
