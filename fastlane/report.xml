@@ -5,32 +5,32 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.005547">
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.003938">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.003737">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.003413">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: gym" time="28.155826">
+      <testcase classname="fastlane.lanes" name="2: gym" time="30.628028">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: hockey" time="12.370439">
+      <testcase classname="fastlane.lanes" name="3: hockey" time="72.502868">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: rm -rf ~/Documents/CZC/pingstart-ios-sdk/CZCMobileAdsSample.app.dSYM.zip" time="0.01193">
+      <testcase classname="fastlane.lanes" name="4: rm -rf ~/Documents/CZC/pingstart-ios-sdk/CZCMobileAdsSample.app.dSYM.zip" time="0.01862">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: rm -rf ~/Documents/CZC/pingstart-ios-sdk/CZCMobileAdsSample.ipa" time="0.013868">
+      <testcase classname="fastlane.lanes" name="5: rm -rf ~/Documents/CZC/pingstart-ios-sdk/CZCMobileAdsSample.ipa" time="0.015439">
         
       </testcase>
     
