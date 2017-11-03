@@ -7,6 +7,7 @@
 //
 
 #import "CZCVideoViewController.h"
+#import "CZCAppIDAndSlotIDCache.h"
 #import <CZCMobileAdsSDK/CZCRewardVideoAd.h>
 
 @interface CZCVideoViewController () <UITextFieldDelegate, CZCRewardVideoAdDelegate>
@@ -25,9 +26,23 @@
 @property (nonatomic, assign) int rewardAmount;
 @property (nonatomic) NSString *rewardCurrency;
 
+@property (nonatomic) CZCAppIDAndSlotIDCache *cache;
+
 @end
 
 @implementation CZCVideoViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    if ([self.cache getAppIDWithAdType:CZCAdTypeVideo]) {
+        self.appIDTextField.text = [self.cache getAppIDWithAdType:CZCAdTypeVideo];
+    }
+
+    if ([self.cache getSlotIDWithAdType:CZCAdTypeVideo]) {
+        self.slotIDTextField.text = [self.cache getSlotIDWithAdType:CZCAdTypeVideo];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -124,6 +139,19 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self.cache cacheAppIDWithAppID:self.appIDTextField.text adType:CZCAdTypeVideo];
+    [self.cache cacheAppIDWithSlotID:self.slotIDTextField.text adType:CZCAdTypeVideo];
+}
+
+- (CZCAppIDAndSlotIDCache *)cache {
+    if (!_cache) {
+        _cache = [[CZCAppIDAndSlotIDCache alloc] init];
+    }
+
+    return _cache;
 }
 
 - (void)didReceiveMemoryWarning {

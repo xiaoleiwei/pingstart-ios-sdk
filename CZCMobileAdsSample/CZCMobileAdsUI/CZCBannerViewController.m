@@ -7,9 +7,10 @@
 //
 
 #import "CZCBannerViewController.h"
+#import "CZCAppIDAndSlotIDCache.h"
 #import <CZCMobileAdsSDK/CZCBannerView.h>
 
-@interface CZCBannerViewController () <CZCBannerViewDelegate>
+@interface CZCBannerViewController () <CZCBannerViewDelegate, UITextFieldDelegate>
 
 @property (nonatomic) CZCBannerView *bannerView;
 @property (weak, nonatomic) IBOutlet UITextField *appIDTextField;
@@ -20,9 +21,23 @@
 @property (weak, nonatomic) IBOutlet UILabel *retryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *impressionLabel;
 
+@property (nonatomic) CZCAppIDAndSlotIDCache *cache;
+
 @end
 
 @implementation CZCBannerViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    if ([self.cache getAppIDWithAdType:CZCAdTypeBanner]) {
+        self.appIDTextField.text = [self.cache getAppIDWithAdType:CZCAdTypeBanner];
+    }
+
+    if ([self.cache getSlotIDWithAdType:CZCAdTypeBanner]) {
+        self.slotIDTextField.text = [self.cache getSlotIDWithAdType:CZCAdTypeBanner];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,7 +49,6 @@
                                                   position:CZCBannerPositionBottom
                                                   delegate:self
                                         rootViewController:self];
-    [self.bannerView disableAutoRefresh];
 }
 
 - (IBAction)loadAd:(id)sender {
@@ -90,6 +104,19 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self.cache cacheAppIDWithAppID:self.appIDTextField.text adType:CZCAdTypeBanner];
+    [self.cache cacheAppIDWithSlotID:self.slotIDTextField.text adType:CZCAdTypeBanner];
+}
+
+- (CZCAppIDAndSlotIDCache *)cache {
+    if (!_cache) {
+        _cache = [[CZCAppIDAndSlotIDCache alloc] init];
+    }
+
+    return _cache;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -21,6 +21,7 @@
 		63CE97E01F3AB55F00E5DDDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CE97DE1F3AB55F00E5DDDE /* Main.storyboard */; };
 		63CE97E21F3AB55F00E5DDDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63CE97E11F3AB55F00E5DDDE /* Assets.xcassets */; };
 		63CE97E51F3AB55F00E5DDDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63CE97E31F3AB55F00E5DDDE /* LaunchScreen.storyboard */; };
+		63DBA1531FAC998E009F1C2C /* CZCAppIDAndSlotIDCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DBA1521FAC998E009F1C2C /* CZCAppIDAndSlotIDCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		63CE97E11F3AB55F00E5DDDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63CE97E41F3AB55F00E5DDDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63CE97E61F3AB55F00E5DDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DBA1511FAC998E009F1C2C /* CZCAppIDAndSlotIDCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCAppIDAndSlotIDCache.h; sourceTree = "<group>"; };
+		63DBA1521FAC998E009F1C2C /* CZCAppIDAndSlotIDCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCAppIDAndSlotIDCache.m; sourceTree = "<group>"; };
 		93349DBBD07DCC0710B3AC9E /* Pods_CZCMobileAdsSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CZCMobileAdsSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C425DD9C81FE8DDCB35647A4 /* Pods-CZCMobileAdsSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZCMobileAdsSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CZCMobileAdsSample/Pods-CZCMobileAdsSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +67,8 @@
 		63C3161F1FA09C20001CAC3D /* CZCMobileAdsUI */ = {
 			isa = PBXGroup;
 			children = (
+				63DBA1511FAC998E009F1C2C /* CZCAppIDAndSlotIDCache.h */,
+				63DBA1521FAC998E009F1C2C /* CZCAppIDAndSlotIDCache.m */,
 				63C316201FA09C20001CAC3D /* CZCBannerViewController.h */,
 				63C316211FA09C20001CAC3D /* CZCBannerViewController.m */,
 				63C316221FA09C20001CAC3D /* CZCBannerViewController.xib */,
@@ -279,6 +284,7 @@
 				63C316331FA09C20001CAC3D /* CZCTableViewController.m in Sources */,
 				63C316311FA09C20001CAC3D /* CZCInterstitialViewController.m in Sources */,
 				63C3162F1FA09C20001CAC3D /* CZCBannerViewController.m in Sources */,
+				63DBA1531FAC998E009F1C2C /* CZCAppIDAndSlotIDCache.m in Sources */,
 				63CE97D71F3AB55F00E5DDDE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

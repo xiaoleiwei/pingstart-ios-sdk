@@ -7,9 +7,10 @@
 //
 
 #import "CZCInterstitialViewController.h"
+#import "CZCAppIDAndSlotIDCache.h"
 #import <CZCMobileAdsSDK/CZCInterstitial.h>
 
-@interface CZCInterstitialViewController () <CZCInterstitialDelegate>
+@interface CZCInterstitialViewController () <CZCInterstitialDelegate, UITextFieldDelegate>
 
 @property (nonatomic) CZCInterstitial *interstitial;
 @property (weak, nonatomic) IBOutlet UITextField *appIDTextField;
@@ -21,9 +22,23 @@
 @property (weak, nonatomic) IBOutlet UILabel *readyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *presentLabel;
 
+@property (nonatomic) CZCAppIDAndSlotIDCache *cache;
+
 @end
 
 @implementation CZCInterstitialViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    if ([self.cache getAppIDWithAdType:CZCAdTypeInterstitial]) {
+        self.appIDTextField.text = [self.cache getAppIDWithAdType:CZCAdTypeInterstitial];
+    }
+
+    if ([self.cache getSlotIDWithAdType:CZCAdTypeInterstitial]) {
+        self.slotIDTextField.text = [self.cache getSlotIDWithAdType:CZCAdTypeInterstitial];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -100,6 +115,19 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self.cache cacheAppIDWithAppID:self.appIDTextField.text adType:CZCAdTypeInterstitial];
+    [self.cache cacheAppIDWithSlotID:self.slotIDTextField.text adType:CZCAdTypeInterstitial];
+}
+
+- (CZCAppIDAndSlotIDCache *)cache {
+    if (!_cache) {
+        _cache = [[CZCAppIDAndSlotIDCache alloc] init];
+    }
+
+    return _cache;
 }
 
 - (void)didReceiveMemoryWarning {
