@@ -45,6 +45,9 @@
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="pTC-Nu-6Sr"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3214" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h6a-te-qvL">
                     <rect key="frame" x="94" y="150" width="196" height="30"/>
@@ -55,6 +58,9 @@
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="U3X-nL-oGK"/>
+                    </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SlotID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9X-hD-Fnm">
                     <rect key="frame" x="33" y="155" width="53" height="21"/>
@@ -173,7 +179,7 @@
                 <constraint firstItem="2CT-t8-F7U" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tFT-Qw-3hv"/>
                 <constraint firstItem="D9X-hD-Fnm" firstAttribute="top" secondItem="4Da-9u-Am2" secondAttribute="bottom" constant="18" id="vLS-ff-vPY"/>
             </constraints>
-            <point key="canvasLocation" x="-1135" y="-327"/>
+            <point key="canvasLocation" x="-1020" y="-422"/>
         </view>
     </objects>
 </document>

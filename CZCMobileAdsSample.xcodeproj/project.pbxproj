@@ -14,8 +14,6 @@
 		63C316321FA09C20001CAC3D /* CZCInterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C316251FA09C20001CAC3D /* CZCInterstitialViewController.xib */; };
 		63C316331FA09C20001CAC3D /* CZCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C316271FA09C20001CAC3D /* CZCTableViewController.m */; };
 		63C316341FA09C20001CAC3D /* CZCTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C316281FA09C20001CAC3D /* CZCTableViewController.xib */; };
-		63C316351FA09C20001CAC3D /* CZCVideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C3162A1FA09C20001CAC3D /* CZCVideoDetailViewController.m */; };
-		63C316361FA09C20001CAC3D /* CZCVideoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C3162B1FA09C20001CAC3D /* CZCVideoDetailViewController.xib */; };
 		63C316371FA09C20001CAC3D /* CZCVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C3162D1FA09C20001CAC3D /* CZCVideoViewController.m */; };
 		63C316381FA09C20001CAC3D /* CZCVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C3162E1FA09C20001CAC3D /* CZCVideoViewController.xib */; };
 		63CE97D71F3AB55F00E5DDDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE97D61F3AB55F00E5DDDE /* main.m */; };
@@ -36,9 +34,6 @@
 		63C316261FA09C20001CAC3D /* CZCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCTableViewController.h; sourceTree = "<group>"; };
 		63C316271FA09C20001CAC3D /* CZCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCTableViewController.m; sourceTree = "<group>"; };
 		63C316281FA09C20001CAC3D /* CZCTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCTableViewController.xib; sourceTree = "<group>"; };
-		63C316291FA09C20001CAC3D /* CZCVideoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCVideoDetailViewController.h; sourceTree = "<group>"; };
-		63C3162A1FA09C20001CAC3D /* CZCVideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCVideoDetailViewController.m; sourceTree = "<group>"; };
-		63C3162B1FA09C20001CAC3D /* CZCVideoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCVideoDetailViewController.xib; sourceTree = "<group>"; };
 		63C3162C1FA09C20001CAC3D /* CZCVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCVideoViewController.h; sourceTree = "<group>"; };
 		63C3162D1FA09C20001CAC3D /* CZCVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCVideoViewController.m; sourceTree = "<group>"; };
 		63C3162E1FA09C20001CAC3D /* CZCVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCVideoViewController.xib; sourceTree = "<group>"; };
@@ -78,9 +73,6 @@
 				63C316261FA09C20001CAC3D /* CZCTableViewController.h */,
 				63C316271FA09C20001CAC3D /* CZCTableViewController.m */,
 				63C316281FA09C20001CAC3D /* CZCTableViewController.xib */,
-				63C316291FA09C20001CAC3D /* CZCVideoDetailViewController.h */,
-				63C3162A1FA09C20001CAC3D /* CZCVideoDetailViewController.m */,
-				63C3162B1FA09C20001CAC3D /* CZCVideoDetailViewController.xib */,
 				63C3162C1FA09C20001CAC3D /* CZCVideoViewController.h */,
 				63C3162D1FA09C20001CAC3D /* CZCVideoViewController.m */,
 				63C3162E1FA09C20001CAC3D /* CZCVideoViewController.xib */,
@@ -210,7 +202,6 @@
 			files = (
 				63CE97E51F3AB55F00E5DDDE /* LaunchScreen.storyboard in Resources */,
 				63C316381FA09C20001CAC3D /* CZCVideoViewController.xib in Resources */,
-				63C316361FA09C20001CAC3D /* CZCVideoDetailViewController.xib in Resources */,
 				63C316321FA09C20001CAC3D /* CZCInterstitialViewController.xib in Resources */,
 				63C316341FA09C20001CAC3D /* CZCTableViewController.xib in Resources */,
 				63C316301FA09C20001CAC3D /* CZCBannerViewController.xib in Resources */,
@@ -286,7 +277,6 @@
 				63C316371FA09C20001CAC3D /* CZCVideoViewController.m in Sources */,
 				63CE97DA1F3AB55F00E5DDDE /* AppDelegate.m in Sources */,
 				63C316331FA09C20001CAC3D /* CZCTableViewController.m in Sources */,
-				63C316351FA09C20001CAC3D /* CZCVideoDetailViewController.m in Sources */,
 				63C316311FA09C20001CAC3D /* CZCInterstitialViewController.m in Sources */,
 				63C3162F1FA09C20001CAC3D /* CZCBannerViewController.m in Sources */,
 				63CE97D71F3AB55F00E5DDDE /* main.m in Sources */,

@@ -6,10 +6,9 @@
 //  Copyright © 2017年 ht. All rights reserved.
 //
 
+#import "CZCRewardVideoAdDelegate.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
-#import "CZCRewardVideoAdDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

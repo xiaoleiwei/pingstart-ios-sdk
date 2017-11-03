@@ -7,7 +7,7 @@
 //
 
 #import "CZCInterstitialViewController.h"
-#import  <CZCMobileAdsSDK/CZCInterstitial.h>
+#import <CZCMobileAdsSDK/CZCInterstitial.h>
 
 @interface CZCInterstitialViewController () <CZCInterstitialDelegate>
 
@@ -34,14 +34,15 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
+
     self.interstitial = nil;
 }
 
 - (IBAction)loadInterstitial:(id)sender {
     self.loadingLabel.textColor = [UIColor blackColor];
-    
-    self.interstitial = [[CZCInterstitial alloc] initWithAppID:self.appIDTextField.text slotID:self.slotIDTextField.text delegate:self];
+
+    self.interstitial =
+        [[CZCInterstitial alloc] initWithAppID:self.appIDTextField.text slotID:self.slotIDTextField.text delegate:self];
 }
 
 - (IBAction)present:(id)sender {
@@ -51,7 +52,7 @@
 #pragma mark - CZCInterstitialDelegate
 - (void)interstitialDidReceivedAd:(CZCInterstitial *)ad {
     __weak typeof(self) weakSelf = self;
-    
+
     dispatch_async(dispatch_get_main_queue(), ^{
         weakSelf.readyLabel.textColor = [UIColor blackColor];
         weakSelf.errorLabel.textColor = [UIColor lightGrayColor];
@@ -61,7 +62,7 @@
 
 - (void)interstitial:(CZCInterstitial *)ad didFailToReceiveAdWithError:(NSError *)error {
     __weak typeof(self) weakSelf = self;
-    
+
     dispatch_async(dispatch_get_main_queue(), ^{
         weakSelf.errorLabel.text = error.localizedFailureReason;
         weakSelf.errorLabel.textColor = [UIColor redColor];
@@ -71,7 +72,7 @@
 
 - (void)interstitialWillPresentScreen:(CZCInterstitial *)ad {
     __weak typeof(self) weakSelf = self;
-    
+
     dispatch_async(dispatch_get_main_queue(), ^{
         weakSelf.presentLabel.textColor = [UIColor blackColor];
     });
@@ -82,7 +83,7 @@
 
 - (void)interstitialWillDismissScreen:(CZCInterstitial *)ad {
     __weak typeof(self) weakSelf = self;
-    
+
     dispatch_async(dispatch_get_main_queue(), ^{
         [weakSelf reset];
     });
@@ -95,7 +96,11 @@
     self.presentLabel.textColor = [UIColor lightGrayColor];
 }
 
-
+#pragma mark - UITextField Delegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
