@@ -32,8 +32,10 @@
 
 @implementation CZCVideoViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.navigationItem.title = @"Video";
 
     if ([self.cache getAppIDWithAdType:CZCAdTypeVideo]) {
         self.appIDTextField.text = [self.cache getAppIDWithAdType:CZCAdTypeVideo];
@@ -42,12 +44,6 @@
     if ([self.cache getSlotIDWithAdType:CZCAdTypeVideo]) {
         self.slotIDTextField.text = [self.cache getSlotIDWithAdType:CZCAdTypeVideo];
     }
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    self.navigationItem.title = @"Video";
 }
 
 - (IBAction)initializeRewardVideo:(id)sender {
@@ -122,7 +118,9 @@
                          message:nil
                   preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
-    [self presentViewController:alert animated:YES completion:nil];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakSelf presentViewController:alert animated:YES completion:nil];
+    });
 }
 
 - (void)rewardVideoAdWillLeaveApplication:(CZCRewardVideoAd *)rewardVideoAd {

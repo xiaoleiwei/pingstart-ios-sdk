@@ -28,8 +28,11 @@
 
 @implementation CZCInterstitialViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.navigationItem.title = @"Interstitial";
+    self.view.backgroundColor = [UIColor whiteColor];
 
     if ([self.cache getAppIDWithAdType:CZCAdTypeInterstitial]) {
         self.appIDTextField.text = [self.cache getAppIDWithAdType:CZCAdTypeInterstitial];
@@ -38,13 +41,6 @@
     if ([self.cache getSlotIDWithAdType:CZCAdTypeInterstitial]) {
         self.slotIDTextField.text = [self.cache getSlotIDWithAdType:CZCAdTypeInterstitial];
     }
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    self.navigationItem.title = @"Interstitial";
-    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

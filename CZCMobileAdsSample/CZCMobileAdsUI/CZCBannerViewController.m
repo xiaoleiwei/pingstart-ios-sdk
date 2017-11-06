@@ -27,8 +27,10 @@
 
 @implementation CZCBannerViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.navigationItem.title = @"Banner";
 
     if ([self.cache getAppIDWithAdType:CZCAdTypeBanner]) {
         self.appIDTextField.text = [self.cache getAppIDWithAdType:CZCAdTypeBanner];
@@ -39,21 +41,14 @@
     }
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    self.navigationItem.title = @"Banner";
+- (IBAction)loadAd:(id)sender {
+    self.loadingLabel.textColor = [UIColor blackColor];
 
     self.bannerView = [[CZCBannerView alloc] initWithAppID:self.appIDTextField.text
                                                     slotID:self.slotIDTextField.text
                                                   position:CZCBannerPositionBottom
                                                   delegate:self
                                         rootViewController:self];
-}
-
-- (IBAction)loadAd:(id)sender {
-    self.loadingLabel.textColor = [UIColor blackColor];
-
     [self.bannerView loadAd];
 }
 
