@@ -23,6 +23,8 @@
 
 @property (nonatomic) CZCAppIDAndSlotIDCache *cache;
 
+@property (nonatomic, assign) BOOL isClick;
+
 @end
 
 @implementation CZCBannerViewController
@@ -55,12 +57,18 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 
+    if (self.isClick) {
+        return;
+    }
+
     [self.bannerView removeFromSuperview];
     self.bannerView = nil;
 }
 
 #pragma mark - CZCBannerViewDelegate
 - (void)adViewRequest:(CZCBannerView *)bannerView {
+    self.isClick = NO;
+
     __weak typeof(self) weakSelf = self;
 
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -93,6 +101,7 @@
 }
 
 - (void)adViewDidClick:(CZCBannerView *)bannerView {
+    self.isClick = YES;
 }
 
 #pragma mark - UITextField Delegate

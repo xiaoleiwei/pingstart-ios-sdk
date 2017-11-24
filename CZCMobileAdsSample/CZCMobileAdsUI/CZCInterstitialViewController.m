@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *presentLabel;
 
 @property (nonatomic) CZCAppIDAndSlotIDCache *cache;
+@property (nonatomic, assign) BOOL isClick;
 
 @end
 
@@ -46,6 +47,9 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 
+    if (self.isClick) {
+        return;
+    }
     self.interstitial = nil;
 }
 
@@ -90,9 +94,12 @@
 }
 
 - (void)interstitialDidClick:(CZCInterstitial *)ad {
+    self.isClick = YES;
 }
 
 - (void)interstitialWillDismissScreen:(CZCInterstitial *)ad {
+    self.isClick = NO;
+
     __weak typeof(self) weakSelf = self;
 
     dispatch_async(dispatch_get_main_queue(), ^{

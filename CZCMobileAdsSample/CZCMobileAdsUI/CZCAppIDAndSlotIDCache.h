@@ -2,7 +2,7 @@
 //  CZCAppIDAndSlotIDCache.h
 //  CZCMobileAds_Example
 //
-//  Created by 魏晓磊 on 2017/11/3.
+//  Created by ht on 2017/11/3.
 //  Copyright © 2017年 xiaoleiwei. All rights reserved.
 //
 

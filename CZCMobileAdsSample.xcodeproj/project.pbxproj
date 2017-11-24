@@ -423,7 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.czc.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "afd050e4-5403-4839-a481-4d31ad98d636";
+				PROVISIONING_PROFILE = "c9e345fe-bee0-4cf3-99b0-f618b8506124";
 				PROVISIONING_PROFILE_SPECIFIER = ChinaLifeTestDevelopment;
 			};
 			name = Debug;
