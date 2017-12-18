@@ -111,7 +111,7 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
 
 #### Present interstitial
 ```Objective-C
-    [self.interstitial presentFromRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+[self.interstitial presentFromRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
 ```
 
 #### Set up interstitial event notifications
