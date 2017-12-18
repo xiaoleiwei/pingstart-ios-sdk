@@ -32,6 +32,8 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
   * CoreMedia.framework
   * CoreTelephony.framework
   * AdSupport.framework
+  * StoreKit.framework
+  * WebKit.framework
   
 4.Go to Targer->Build Settings->Search for "other linker flags", add "-ObjC" in other linker flags.
 ## Example
