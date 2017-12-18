@@ -161,7 +161,7 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
 ```
 #### Set up video event notifications
 ```Objective-C
-[GADRewardBasedVideoAd sharedInstance].delegate = self;
+[CZCRewardVideoAd sharedInstance].delegate = self;
 ```
 Here is an example that logs each event available in CZCRewardVideoAdDelegate:
 ```Objective-C
