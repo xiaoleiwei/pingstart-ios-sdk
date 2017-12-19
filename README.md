@@ -159,6 +159,13 @@ If you're new to CocoaPods, see their [official documentation](https://guides.co
 
 @end
 ```
+### Display rewarded video
+```Objective-C
+if ([[CZCRewardVideoAd sharedInstance] isReady]) {
+    [[CZCRewardVideoAd sharedInstance] presentFromRootViewController:self];
+}
+```
+
 #### Set up video event notifications
 ```Objective-C
 [CZCRewardVideoAd sharedInstance].delegate = self;
@@ -189,11 +196,5 @@ Here is an example that logs each event available in CZCRewardVideoAdDelegate:
 
 // Tells the delegate that the reward video ad will leave tha application.
 - (void)rewardVideoAdWillLeaveApplication:(CZCRewardVideoAd *)rewardVideoAd {
-}
-```
-### Display rewarded video
-```Objective-C
-if ([[CZCRewardVideoAd sharedInstance] isReady]) {
-    [[CZCRewardVideoAd sharedInstance] presentFromRootViewController:self];
 }
 ```
