@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CZCMobileAdsSDK/CZCSplash.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,CZCSplashDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

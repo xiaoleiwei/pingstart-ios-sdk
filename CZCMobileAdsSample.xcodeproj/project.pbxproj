@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05671BB455929AB5562BB311 /* Pods_CZCMobileAdsSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93349DBBD07DCC0710B3AC9E /* Pods_CZCMobileAdsSample.framework */; };
+		63263FE82117FA6800ECCB6A /* adimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 63263FE72117FA6800ECCB6A /* adimage.png */; };
 		63C3162F1FA09C20001CAC3D /* CZCBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C316211FA09C20001CAC3D /* CZCBannerViewController.m */; };
 		63C316301FA09C20001CAC3D /* CZCBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C316221FA09C20001CAC3D /* CZCBannerViewController.xib */; };
 		63C316311FA09C20001CAC3D /* CZCInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C316241FA09C20001CAC3D /* CZCInterstitialViewController.m */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		26BD117E7D9CDF638EACC2D5 /* Pods-CZCMobileAdsSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZCMobileAdsSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CZCMobileAdsSample/Pods-CZCMobileAdsSample.release.xcconfig"; sourceTree = "<group>"; };
+		63263FE72117FA6800ECCB6A /* adimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adimage.png; sourceTree = "<group>"; };
 		63C316201FA09C20001CAC3D /* CZCBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCBannerViewController.h; sourceTree = "<group>"; };
 		63C316211FA09C20001CAC3D /* CZCBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCBannerViewController.m; sourceTree = "<group>"; };
 		63C316221FA09C20001CAC3D /* CZCBannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCBannerViewController.xib; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63263FE62117FA6800ECCB6A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				63263FE72117FA6800ECCB6A /* adimage.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		63C3161F1FA09C20001CAC3D /* CZCMobileAdsUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 		63CE97D41F3AB55F00E5DDDE /* CZCMobileAdsSample */ = {
 			isa = PBXGroup;
 			children = (
+				63263FE62117FA6800ECCB6A /* Images */,
 				63C3161F1FA09C20001CAC3D /* CZCMobileAdsUI */,
 				63CE97D81F3AB55F00E5DDDE /* AppDelegate.h */,
 				63CE97D91F3AB55F00E5DDDE /* AppDelegate.m */,
@@ -154,7 +165,6 @@
 				63CE97CE1F3AB55F00E5DDDE /* Sources */,
 				63CE97CF1F3AB55F00E5DDDE /* Frameworks */,
 				63CE97D01F3AB55F00E5DDDE /* Resources */,
-				7E0BF8A7DF6DEADCF9B41ED4 /* [CP] Embed Pods Frameworks */,
 				D9E1FC962350BFB1842844CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -211,6 +221,7 @@
 				63C316341FA09C20001CAC3D /* CZCTableViewController.xib in Resources */,
 				63C316301FA09C20001CAC3D /* CZCBannerViewController.xib in Resources */,
 				63CE97E21F3AB55F00E5DDDE /* Assets.xcassets in Resources */,
+				63263FE82117FA6800ECCB6A /* adimage.png in Resources */,
 				63CE97E01F3AB55F00E5DDDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,24 +247,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E0BF8A7DF6DEADCF9B41ED4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CZCMobileAdsSample/Pods-CZCMobileAdsSample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CZCMobileAdsSDK/CZCMobileAdsSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CZCMobileAdsSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CZCMobileAdsSample/Pods-CZCMobileAdsSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D9E1FC962350BFB1842844CC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,7 +258,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CZCMobileAdsSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

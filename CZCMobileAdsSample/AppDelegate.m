@@ -17,6 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[CZCSplash shareManager] loadSplashWithAppID:@"5271_1" slotID:@"2" delegate:self defaultImage:@"adimage.png"];
+
     self.window = [[UIWindow alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     
